@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    display: block;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: "Open Sans" !important;
+    font-weight: 400;
+    background: url(/images/bg-desktop.svg);
+    background-color: var(--Violet);
+}
+
+.logo {
+    margin-left: 35px;
+    margin-top: 35px;
+}
+
+.main {
+    margin-top: 40px;
+
+}
+
+.one {
+    height: auto;
+    width: 710px;
+    margin-left: 40px;
+}
+
+.two {
+    width: 458px;
+    height: auto;
+    color: white;
+    margin-left: 40px;
+    margin-top: -180px;
+}
+
+.two h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+
+.two p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.btn {
+    background: white;
+    width: 130px;
+    height: 50px;
+    border-radius: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--Violet);
+}
+
+.social {
+    width: 95vw;
+    height: auto;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.social i {
+    margin-right: 20px;
+}
+
+@media (max-width: 415px) {
+    body {
+        font-family: "Open Sans" !important;
+        font-weight: 400;
+        background: url(/images/bg-mobile.svg);
+        background-color: var(--Violet);
+        height: auto;
+        width: 100vw;
+    }
+
+    .logo {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        width: auto;
+        height: 40px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .one {
+        width: 90%;
+        height: auto;
+        margin: 0 0;
+    }
+
+    .two {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        text-align: center;
+        width: 90%;
+        height: 455px;
+        align-items: center;
+    }
+
+    .btn {
+        width: 90%;
+        height: 40px;
+        margin: 20px 1px;
+    }
+
+    .social {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
